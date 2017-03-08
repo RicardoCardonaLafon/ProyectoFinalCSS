@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'DancingScript-Regular';
+  src: url('DancingScript-Regular.otf');
+}
+body{
+    font-family: 'DancingScript-Regular';
+    font-size: 2em;
+    background-color: black;
+}
+header{
+    color:white;
+    text-shadow: 0 0 2px  #02010a;
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contenido
+{
+	width: 900px;
+    margin:0 auto;
+    
+    
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+}
+
+	#fondo_imagencentral
+	{
+	background-color:#82c3a6;
+	width: 100%;
+
+	}
+	#fondo_imagenizquierda 
+	{
+	    background-color:  #d5c75f;
+	    width: 50%;
+	}
+	#fondo_imagenderecha
+	{
+        background-color:  #d5c75f;
+        width: 50%;
+	}
+
+@media screen and (max-width: 900px){
+
+    .contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#fondo_imagencentral
+	{
+    background-color:#82c3a6;
+	width: 100%;
+	}
+	#fondo_imagenizquierda
+	{
+    background-color:  #d5c75f;
+	width: 100%;
+	}
+	#fondo_imagenderecha
+	{
+    background-color:  #d5c75f;
+	width: 100%;
+	}
+
+	header
+	{
+	width:100%;
+	}
+}
+
+}
+/*.contenido{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}*/
