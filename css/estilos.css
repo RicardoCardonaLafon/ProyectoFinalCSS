@@ -11,6 +11,10 @@ body{
 {
 	width: 900px;
     margin:0 auto;
+    display: flex;
+    flex-direction:row;
+    flex-flow:row wrap;
+    
    
 }
 header{
@@ -21,36 +25,170 @@ header{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding-left: 20px;
-    
+    width: 100%;
 }
 
 #titulo{
     float: left;
     
 }
-.top_menu ul
+.top_menu_index ul
 {
     float: right;
     list-style:none;
-    float:right;
     width:50%;
 }
-.top_menu ul li
+.top_menu_index ul li
 {
     float:right;
     margin-right:20px;
-    margin-bottom:10px;
     padding:5px;
     font-size:0.6em;
 }
-.top_menu ul li a
+.top_menu_paisajes ul
 {
-    
-    text-decoration:none;
-    
+    float: right;
+    list-style:none;
+    width:50%;
+}
+.top_menu_paisajes ul li
+{
+    float:right;
+    margin-right:20px;
+    padding:5px;
+    font-size:0.6em;
+}
+.top_menu_retratos ul
+{
+    float: right;
+    list-style:none;
+    width:50%;
+}
+.top_menu_retratos ul li
+{
+    float:right;
+    margin-right:20px;
+    padding:5px;
+    font-size:0.6em;
+}
+/*Comienzo decoración menu index*/
+.top_menu_index ul li #inicio1
+{
+    float:right;
+    text-decoration: none;
+    color:white;
+}
+.top_menu_index ul li #inicio1:visited
+{
+    float:right;
+    text-decoration: none;
+    color:white;
+}
+.top_menu_index ul li #paisajes1
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+.top_menu_index ul li #paisajes1:visited
+{
+    float:right;
+    text-decoration: underline;
+    color:white;
+}
+.top_menu_index ul li #retratos1
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+.top_menu_index ul li #retratos1:visited
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+/*Fin decoración menu index*/
 
+/*Comienzo decoración menu retratos*/
+.top_menu_retratos ul li #retratos3
+{
+    float:right;
+    text-decoration: none;
+    color:white;
+}
+.top_menu_retratos ul li #retratos3:visited
+{
+    float:right;
+    text-decoration: none;
+    color:white;
+}
+.top_menu_retratos ul li #inicio3
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+.top_menu_retratos ul li #inicio3:visited
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+.top_menu_retratos ul li #paisajes3
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+.top_menu_retratos ul li #paisajes3:visited
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
 }
 
+/*Fin decoración menu retratos*/
+
+/*Comienzo decoración menu paisajes*/
+.top_menu_paisajes ul li #paisajes2
+{
+    float:right;
+    text-decoration: none;
+    color:white;
+}
+.top_menu_paisajes ul li #paisajes2:visited
+{
+    float:right;
+    text-decoration: none;
+    color:white;
+}
+.top_menu_paisajes ul li #inicio2
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+.top_menu_paisajes ul li #inicio2:visited
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+.top_menu_paisajes ul li #retratos2
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+.top_menu_paisajes ul li #retratos2:visited
+{
+    float:right;
+    text-decoration:underline;
+    color:white;
+}
+
+/*Fin decoración menu paisajes*/
 article
 {
 	box-sizing: border-box;
@@ -144,9 +282,34 @@ article
     border: 2px solid;
 }
 footer{
-
+    height: 120px;
+    color:black;
+    background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 20px;
+    width: 100%;
 }
-
+div [class*="col"]{
+    flex:1 1 15%;
+}
+.pie{
+    display: flex;
+    flex-direction:row;
+    flex-flow:row wrap;
+}
+.pie p{
+    margin: 3px 0;
+}
+#encabezado_pie{
+    font-size: 1em;
+}
+#info_pie{
+    font-size: 0.5em;
+    text-align: left;
+    margin-left: 50px;
+    color: black;
+}
 @media screen and (max-width: 900px){
     header p, nav{ 
         
