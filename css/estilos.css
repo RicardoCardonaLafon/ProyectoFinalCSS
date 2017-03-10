@@ -7,127 +7,145 @@ body{
     font-size: 2em;
     background-color: black;
 }
+.contenido
+{
+	width: 900px;
+    margin:0 auto;
+   
+}
 header{
+    height: 100px;
     color:white;
     text-shadow: 0 0 2px  #02010a;
     background-color: #5b7989;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    text-align: left;
     padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-header p, nav{ 
-    display:inline-flex; 
-    
-    max-width:100%; 
-    vertical-align:middle; 
-    
-} 
-nav{
-    float: right;
-    padding-right: 20px;
-}
-#menu{
-    padding: 0;
     
 }
-#menu li {
-    display: inline-flex;
 
-    font-size:0.6em;
-}
-#menu li a {
-    text-decoration: none;
-    float:right;
-    padding: 5px;
+#titulo{
+    float: left;
     
 }
-/*header p,nav{ 
-    display:inline-block; 
-    max-width:100%; 
-    vertical-align:middle; 
-    
-} 
-nav{
-    
-}
-nav ul{
-    list-style:none;
-    margin-right: 20px;
-    align-content: 
-} 
-nav li{ 
-    
-    font-size:0.6em;
-    display:inline-block; 
-    padding: 0.5em; 
-} 
-*/
-
-/*nav{
-    float: right;
-}
-nav ul{
-    list-style: none;
-    overflow: hidden;
-}
-nav ul li{
-    float: right;
-    font-size: 0.6em;
-}
-nav ul li a {
-  display: block;  Convertimos los elementos a en elementos bloque para manipular el padding
-  text-decoration: none;
-  padding: 20px;
-  
-*/
-/*.encabezado nav ul li{
-
-    font-size: 0.7em;
-    padding-right: 20px;
-    
-    text-decoration: none;
-    display: inline;
-}*/
-.contenido
+.top_menu ul
 {
-	width: 900px;
-    margin:0 auto;
-
-    /*flex-direction: column;*/
-   
+    float: right;
+    list-style:none;
+    float:right;
+    width:50%;
 }
+.top_menu ul li
+{
+    float:right;
+    margin-right:20px;
+    margin-bottom:10px;
+    padding:5px;
+    font-size:0.6em;
+}
+.top_menu ul li a
+{
+    
+    text-decoration:none;
+    
+
+}
+
 article
 {
 	box-sizing: border-box;
-	/*float:left;*/
-	height: 100%;
-    width: 100%;
+	
 }
 
-	.fondo_imagencentral
-	{
-	background-color:#82c3a6;
-	width: 100%;
-    height: 100%;
-	}
+.fondo_imagencentral
+{
+    clear:both;
+    background-color:#82c3a6;
+    width: 100%;
+    height: 400px;
+    
+}
 
-	.fondo_imagenizquierda 
-	{
-        float: left;
-	    background-color:#d5c75f;
-	    width: 50%;
-        height: 100%;
-	}
-	.fondo_imagenderecha
-	{
-        float: right;
-        background-color:#d5c75f;
-        width: 50%;
-        height: 100%;
-	}
+.fondo_imagenizquierda 
+{
+    float: left;
+    background-color:#d5c75f;
+    width: 50%;
+    height: 300px;
+    border: 1px solid;
+}
+
+.fondo_imagenderecha
+{
+    float: right;
+    background-color:#d5c75f;
+    width: 50%;
+    height: 300px;
+    border: 1px solid;
+}
+.row {
+	display: flex;
+}
+
+.center {
+	justify-content: center;
+}
+
+.left {
+	justify-content: flex-start;
+}
+
+.right {
+	justify-content: flex-end;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.around {
+	justify-content: space-around;
+}
+
+.middle {
+	align-items: center;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.top {
+	align-items: flex-start;
+}
+
+.column {
+	flex-direction: column;
+}
+.dos_img{
+    
+	text-align: center;
+	
+}
+.img_principal{
+    clear: both;
+    display: inline-flex;
+    text-align: center;
+    
+}
+#paisaje:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 5px  #82c3a6;
+    border: 2px solid;
+}
+#retrato:hover{
+    transform: translate(20px,-5px);
+    box-shadow: 2px 2px 5px #82c3a6 ;
+    border: 2px solid;
+}
+footer{
+
+}
 
 @media screen and (max-width: 900px){
     header p, nav{ 
@@ -140,7 +158,7 @@ article
     } 
     nav{
         float:none;
-        /*padding-right: 20px;*/
+        
     }
     #menu{
         padding: 0;
@@ -184,10 +202,4 @@ article
 	width:100%;
 	}
 }
-
 }
-/*.contenido{
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-}*/

@@ -8,34 +8,37 @@
     </head>
     <body>
         <div class="contenido">
-            <header class="encabezado">
-                <p>Comenzando con la fotografía</p>
-                <nav>
-                    <ul id="menu">
+            <header>
+                <p id="titulo">Comenzando con la fotografía</p>
+                <nav class="top_menu">
+                    <ul>
                         <li><a href="index.html"></a>Inicio</li>
                         <li><a href="paisajes.html"></a>Paisajes</li>
                         <li><a href="retratos.html"></a>Retratos</li>
                     </ul>
                 </nav>
-               
             </header>
 
-            <section>
-               
+            <section class="img_principal center middle">
                   <article class="fondo_imagencentral">
-                  
-                      <img class="jardinjapones" src="Imagenes/jardin_japones.jpg" alt="Jardín Japonés" width:60%>
-                  
+                      <figure class="figura_principal">
+                          <img src="Imagenes/jardin_japones.jpg" alt="Jardín Japonés" width=55%>
+                      </figure>    
                   </article>
+            </section>      
+            <section class="dos_img row center middle wrap">
                   
-                  <article class="fondo_imagenizquierda">
-                       <img src="Imagenes/paisaje.jpg" alt="" width="50%">
-                  </article>
-                  
-                  <article class="fondo_imagenderecha">
-                       <img src="Imagenes/chicos.jpg" alt="" width="50%">
-                  </article>
-               
+                      <article class="fondo_imagenizquierda">
+                          <figure class="figura_central">
+                               <img id="paisaje" src="Imagenes/paisaje.jpg" alt="" width="80%">
+                          </figure>
+                      </article>
+
+                      <article class="fondo_imagenderecha">
+                          <figure class="figura_central">
+                               <img id="retrato" src="Imagenes/chicos.jpg" alt="" width="85%">
+                          </figure>
+                      </article>
             </section>
        
             <footer>
