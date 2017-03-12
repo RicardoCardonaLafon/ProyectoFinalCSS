@@ -17,7 +17,7 @@ body{
     
    
 }
-header{
+#encabezado_index{
     height: 100px;
     color:white;
     text-shadow: 0 0 2px  #02010a;
@@ -27,6 +27,27 @@ header{
     padding-left: 20px;
     width: 100%;
 }
+#encabezado_paisajes{
+    height: 100px;
+    color:white;
+    text-shadow: 0 0 2px  #02010a;
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 20px;
+    width: 100%;
+}
+#encabezado_retratos{
+    height: 100px;
+    color:white;
+    text-shadow: 0 0 2px  #02010a;
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 20px;
+    width: 100%;
+}
+
 
 #titulo{
     float: left;
@@ -196,16 +217,49 @@ article
     float: left;
 	
 }
-table#tabla_paisajes{
+table#tabla_galeria{
     clear:both;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+    height: 400px;
+}
+table.tabla_pie{
+    clear:both;
+    margin-top: 0px;
+    margin-left: 10px;
+    padding: 0;
+    height: 120px;
+    width: 100%
+}
+table.tabla_pie th{
+    text-align: left;
+    font-size: 0.8em;
+}
+table.tabla_pie td{
+    font-size: 0.5em;
+    text-align: left;
+}
+table.tabla_pie td p{
+    text-align: left;
+    font-size: 0.5em;
+}
+.img_principal_galeria{
+    clear: both;
     background-color:#d5c75f;
     width: 100%;
-    height: 700px;
-    text-align: center;
-    
-    
+    height: 500px;
 }
 
+#paisa1 {
+    filter: blur(10px);
+}
+#paisa2, #paisa4, #paisa6{
+    filter: grayscale(100%);
+}    
+#paisa3{
+    filter: sepia(90%)
+}
 .fondo_imagencentral
 {
     clear:both;
@@ -311,8 +365,8 @@ footer{
 .pie p{
     margin: 3px 0;
 }
-#encabezado_pie{
-    font-size: 1em;
+.encabezado_pie{
+    font-size: 0.8em;
 }
 #info_pie{
     font-size: 0.5em;
