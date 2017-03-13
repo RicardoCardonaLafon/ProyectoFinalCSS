@@ -15,201 +15,186 @@ body{
     flex-direction:row;
     flex-flow:row wrap;
     
-   
-}
-#encabezado_index{
-    height: 100px;
-    color:white;
-    text-shadow: 0 0 2px  #02010a;
-    background-color: #5b7989;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-left: 20px;
-    width: 100%;
-}
-#encabezado_paisajes{
-    height: 100px;
-    color:white;
-    text-shadow: 0 0 2px  #02010a;
-    background-color: #5b7989;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-left: 20px;
-    width: 100%;
-}
-#encabezado_retratos{
-    height: 100px;
-    color:white;
-    text-shadow: 0 0 2px  #02010a;
-    background-color: #5b7989;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-left: 20px;
-    width: 100%;
 }
 
-
-#titulo{
-    float: left;
-    
+header{
+    height: 100px;
+    color:white;
+    text-shadow: 0 0 2px  #02010a;
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 20px;
+    width: 100%;
 }
-.top_menu_index ul
-{
-    float: right;
-    list-style:none;
-    width:50%;
+#contenido_header{
+    display:flex;
+    flex-direction:row;
+    flex-flow:row wrap;
 }
-.top_menu_index ul li
-{
+#header1{
+    flex:1 2 40%;
+}
+#header2{
+    flex:1 2 40%;
+}
+#header2 nav{
+    display:block;
     float:right;
-    margin-right:20px;
-    padding:5px;
-    font-size:0.6em;
 }
-.top_menu_paisajes ul
-{
-    float: right;
-    list-style:none;
-    width:50%;
+#header2 #nav_index ul li {
+    display: inline-block;
+    list-style-type: none;
 }
-.top_menu_paisajes ul li
-{
-    float:right;
-    margin-right:20px;
-    padding:5px;
-    font-size:0.6em;
+#header2 #nav_paisajes ul li {
+    display: inline-block;
+    list-style-type: none;
 }
-.top_menu_retratos ul
-{
-    float: right;
-    list-style:none;
-    width:50%;
+#header2 #nav_retratos ul li {
+    display: inline-block;
+    list-style-type: none;
 }
-.top_menu_retratos ul li
-{
-    float:right;
-    margin-right:20px;
-    padding:5px;
-    font-size:0.6em;
-}
-/*Comienzo decoración menu index*/
-.top_menu_index ul li #inicio1
-{
-    float:right;
+/*Efecto Subrayado para el menu*/
+#header2 #nav_index ul li #inicio1 {
+    color:white;
+    margin-right: 10px;
     text-decoration: none;
-    color:white;
+    padding: 0 10px;
+    font-size: 0.6em;
 }
-.top_menu_index ul li #inicio1:visited
-{
-    float:right;
+#header2 #nav_index ul li #inicio1:visited {
+    color:white;
+    margin-right: 10px;
     text-decoration: none;
-    color:white;
+    padding: 0 10px;
+    font-size: 0.6em;
 }
-.top_menu_index ul li #paisajes1
-{
-    float:right;
-    text-decoration:underline;
+#header2 #nav_index ul li #paisajes1 {
     color:white;
-}
-.top_menu_index ul li #paisajes1:visited
-{
-    float:right;
+    margin-right: 10px;
     text-decoration: underline;
-    color:white;
+    padding: 0 10px;
+    font-size: 0.6em;
 }
-.top_menu_index ul li #retratos1
-{
-    float:right;
-    text-decoration:underline;
+#header2 #nav_index ul li #paisajes1:visited {
     color:white;
-}
-.top_menu_index ul li #retratos1:visited
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
-}
-/*Fin decoración menu index*/
-
-/*Comienzo decoración menu retratos*/
-.top_menu_retratos ul li #retratos3
-{
-    float:right;
-    text-decoration: none;
-    color:white;
-}
-.top_menu_retratos ul li #retratos3:visited
-{
-    float:right;
-    text-decoration: none;
-    color:white;
-}
-.top_menu_retratos ul li #inicio3
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
-}
-.top_menu_retratos ul li #inicio3:visited
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
-}
-.top_menu_retratos ul li #paisajes3
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
-}
-.top_menu_retratos ul li #paisajes3:visited
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
 }
 
-/*Fin decoración menu retratos*/
-
-/*Comienzo decoración menu paisajes*/
-.top_menu_paisajes ul li #paisajes2
+#header2 #nav_index ul li #retratos1
 {
-    float:right;
-    text-decoration: none;
     color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
 }
-.top_menu_paisajes ul li #paisajes2:visited
+#header2 #nav_index ul li #retratos1:visited
 {
-    float:right;
-    text-decoration: none;
     color:white;
-}
-.top_menu_paisajes ul li #inicio2
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
-}
-.top_menu_paisajes ul li #inicio2:visited
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
-}
-.top_menu_paisajes ul li #retratos2
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
-}
-.top_menu_paisajes ul li #retratos2:visited
-{
-    float:right;
-    text-decoration:underline;
-    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
 }
 
-/*Fin decoración menu paisajes*/
+/*Para paisajes*/
+#header2 #nav_paisajes ul li #inicio2 {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_paisajes ul li #inicio2:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_paisajes ul li #paisajes2 {
+    color:white;
+    margin-right: 10px;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_paisajes ul li #paisajes2:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+
+#header2 #nav_paisajes ul li #retratos2
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_paisajes ul li #retratos2:visited
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+/*Para Retratos*/
+#header2 #nav_retratos ul li #inicio3 {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_retratos ul li #inicio3:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_retratos ul li #paisajes3 {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_retratos ul li #paisajes3:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+
+#header2 #nav_retratos ul li #retratos3
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_retratos ul li #retratos3:visited
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+/*Fin de Efecto subrayado par el menu*/
+
 article
 {
 	box-sizing:border-box;
@@ -217,20 +202,52 @@ article
     float: left;
 	
 }
+.div_p_r_contenedor{
+    display: flex;
+    flex-direction:row;
+    flex-flow:row wrap; 
+    box-sizing:border-box;
+    width: 100%;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+#galeria1_div,#galeria2_div,#galeria3_div,#galeria4_div,#galeria5_div,#galeria6_div{
+    flex: 1 1 20%;
+    margin-right: 50px;
+    margin-top: 80px;
+    margin-left:50px;
+}
+.pie_div_container{
+    display: flex;
+    flex-direction:row;
+    flex-flow:row wrap;
+    
+    margin-left: 50px;
+    width: 100%;
+    text-align: left;
+}
+#div1_pie,#div2_pie,#div3_pie,#div4_pie{
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 35px;
+}
+
 table#tabla_galeria{
     clear:both;
     text-align: center;
     margin-top: 40px;
     padding: 0;
     height: 400px;
+    
 }
 table.tabla_pie{
     clear:both;
     margin-top: 0px;
-    margin-left: 10px;
-    padding: 0;
-    height: 120px;
-    width: 100%
+    /*margin-left: 0px;
+    padding: 0px;*/
+    height: 150px;
+    width: 100%;
 }
 table.tabla_pie th{
     text-align: left;
@@ -240,9 +257,9 @@ table.tabla_pie td{
     font-size: 0.5em;
     text-align: left;
 }
-table.tabla_pie td p{
+table.tabla_pie_sec tr,td{
+    font-size: 2em;
     text-align: left;
-    font-size: 0.5em;
 }
 .img_principal_galeria{
     clear: both;
@@ -285,28 +302,9 @@ table.tabla_pie td p{
     height: 300px;
     border: 1px solid;
 }
-.row {
-	display: flex;
-}
 
 .center {
 	justify-content: center;
-}
-
-.left {
-	justify-content: flex-start;
-}
-
-.right {
-	justify-content: flex-end;
-}
-
-.between {
-	justify-content: space-between;
-}
-
-.around {
-	justify-content: space-around;
 }
 
 .middle {
@@ -317,13 +315,6 @@ table.tabla_pie td p{
 	flex-wrap: wrap;
 }
 
-.top {
-	align-items: flex-start;
-}
-
-.column {
-	flex-direction: column;
-}
 .dos_img{
     
 	text-align: center;
@@ -346,90 +337,302 @@ table.tabla_pie td p{
     border: 2px solid;
 }
 footer{
-    height: 120px;
+    height: 150px;
     color:black;
     background-color: #C6d5c5;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding-left: 20px;
     width: 100%;
-}
-.pie div [class*="col"]{
-    flex:1 1 15%;
-}
-.pie{
-    display: flex;
-    flex-direction:row;
-    flex-flow:row wrap;
-}
-.pie p{
-    margin: 3px 0;
-}
-.encabezado_pie{
-    font-size: 0.8em;
-}
-#info_pie{
-    font-size: 0.5em;
-    text-align: left;
-    margin-left: 50px;
-    color: black;
 }
 
 /*************Formato para móviles************/
 
 @media screen and (max-width: 900px){
-    header p, nav{ 
-        
-    display:inline-flex; 
+.contenido
+{
+	width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction:row;
+    flex-flow:row wrap;
     
-    max-width:100%; 
-    vertical-align:middle; 
-
-    } 
-    nav{
-        float:none;
-        
-    }
-    #menu{
-        padding: 0;
-
-    }
-    #menu li {
-        display: inline-flex;
-
-        font-size:0.6em;
-    }
-    #menu li a {
-        text-decoration: none;
-        float:none;
-        padding: 5px;
-    }
-    .contenido
-	{
-		width: 100%;
-		margin: 0 auto;
-	}
-	.fondo_imagencentral
-	{
-        background-color:#82c3a6;
-        width: 100%;
-        position: relative;
-	}
-      
-	.fondo_imagenizquierda
-	{
-    background-color:  #d5c75f;
-	width: 100%;
-	}
-	.fondo_imagenderecha
-	{
-    background-color:  #d5c75f;
-	width: 100%;
-	}
-
-	header
-	{
-	width:100%;
-	}
 }
+header{
+    height: 100%;
+    color:white;
+    text-shadow: 0 0 2px  #02010a;
+    background-color: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /*padding-left: 20px;*/
+    /*width: 100%;*/
 }
+#contenido_header{
+    display: flex;
+    flex-direction:column;
+    flex-flow:column wrap; 
+    height: 100%;
+    /*width: 100%;*/
+    box-sizing:border-box;
+    align-items:flex-start;
+    align-content:flex-start;
+    vertical-align:middle;
+}
+#header1{
+    float:left;
+    /*width: 100%;*/
+}
+#header2{ 
+    /*width: 100%;*/
+    /*transform: translate(-50px);*/
+}
+#header2 nav{
+    float: right;
+    
+}
+#header2 nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+}
+#header2 nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+#header2 nav ul li  a {
+    display: block;
+    padding: 0 10px;
+	text-decoration: none;
+    font-size: 0.6em;
+}
+    
+
+/*Efecto Subrayado para el menu*/
+#header2 #nav_index ul li #inicio1 {
+    color:white;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_index ul li #inicio1:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_index ul li #paisajes1 {
+    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_index ul li #paisajes1:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+
+#header2 #nav_index ul li #retratos1
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_index ul li #retratos1:visited
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+
+/*Para paisajes*/
+#header2 #nav_paisajes ul li #inicio2 {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_paisajes ul li #inicio2:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_paisajes ul li #paisajes2 {
+    color:white;
+    margin-right: 10px;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_paisajes ul li #paisajes2:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+
+#header2 #nav_paisajes ul li #retratos2
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_paisajes ul li #retratos2:visited
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration: underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+/*Para Retratos*/
+#header2 #nav_retratos ul li #inicio3 {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_retratos ul li #inicio3:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_retratos ul li #paisajes3 {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_retratos ul li #paisajes3:visited {
+    color:white;
+    margin-right: 10px;
+    text-decoration:underline;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+
+#header2 #nav_retratos ul li #retratos3
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+#header2 #nav_retratos ul li #retratos3:visited
+{
+    color:white;
+    margin-right: 10px;
+    text-decoration:none;
+    padding: 0 10px;
+    font-size: 0.6em;
+}
+/*Fin de Efecto subrayado par el menu*/
+    
+.img_principal_galeria{
+    background-color:#d5c75f;
+    width: 100%;
+    height: 100%;
+    
+}
+.div_p_r_contenedor{
+    display: flex;
+    flex-direction:column;
+    flex-flow:column wrap; 
+    height: 100%;
+    width: 100%;
+    box-sizing:border-box;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+#galeria1_div,#galeria2_div,#galeria3_div,#galeria4_div,#galeria5_div,#galeria6_div{
+    width: 100%;
+    transform:translate(15px);
+    
+}    
+footer{
+    color:black;
+    background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+#div1_pie,#div2_pie,#div3_pie,#div4_pie{
+   
+    margin-left: 5px;
+}
+table.tabla_pie{
+    clear:both;
+    margin-top: 0px;
+    margin-left: 10px;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+table.tabla_pie th{
+    text-align: left;
+    font-size: 0.8em;
+}
+table.tabla_pie td{
+    font-size: 0.5em;
+    text-align: left;
+}
+table.tabla_pie_sec tr,td{
+    margin-top: 0;
+    font-size: 0.7em;
+    text-align: left;
+}
+    
+
+
+.fondo_imagencentral
+{
+    clear:both;
+    background-color:#82c3a6;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.fondo_imagenizquierda 
+{
+    float: left;
+    background-color:#d5c75f;
+    width: 100%;
+    height: 50%;
+    border: 1px solid;
+}
+
+.fondo_imagenderecha
+{
+    float: right;
+    background-color:#d5c75f;
+    width: 100%;
+    height: 50%;
+    border: 1px solid;
+}
+
+
